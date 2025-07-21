@@ -343,12 +343,13 @@
             this.btResetMovie.Text = "ยกเลิก";
             this.btResetMovie.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btResetMovie.UseVisualStyleBackColor = true;
+            this.btResetMovie.Click += new System.EventHandler(this.btResetMovie_Click);
             // 
             // lvShowAllMovie
             // 
             this.lvShowAllMovie.HideSelection = false;
             this.lvShowAllMovie.Location = new System.Drawing.Point(49, 481);
-            this.lvShowAllMovie.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.lvShowAllMovie.Margin = new System.Windows.Forms.Padding(4);
             this.lvShowAllMovie.Name = "lvShowAllMovie";
             this.lvShowAllMovie.Size = new System.Drawing.Size(891, 203);
             this.lvShowAllMovie.TabIndex = 50;
@@ -365,6 +366,7 @@
             this.btExit.Text = "Exit";
             this.btExit.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btExit.UseVisualStyleBackColor = true;
+            this.btExit.Click += new System.EventHandler(this.btExit_Click);
             // 
             // btDeleteMovie
             // 
@@ -378,6 +380,7 @@
             this.btDeleteMovie.Text = "ลบข้อมูล";
             this.btDeleteMovie.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btDeleteMovie.UseVisualStyleBackColor = true;
+            this.btDeleteMovie.Click += new System.EventHandler(this.btDeleteMovie_Click);
             // 
             // btUpdateMovie
             // 
@@ -391,6 +394,7 @@
             this.btUpdateMovie.Text = "บันทึกแก้ไขข้อมูล";
             this.btUpdateMovie.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btUpdateMovie.UseVisualStyleBackColor = true;
+            this.btUpdateMovie.Click += new System.EventHandler(this.btUpdateMovie_Click);
             // 
             // btSaveMovie
             // 
@@ -411,11 +415,12 @@
             this.lvShowSearchMovie.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lvShowSearchMovie.HideSelection = false;
             this.lvShowSearchMovie.Location = new System.Drawing.Point(24, 116);
-            this.lvShowSearchMovie.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.lvShowSearchMovie.Margin = new System.Windows.Forms.Padding(4);
             this.lvShowSearchMovie.Name = "lvShowSearchMovie";
             this.lvShowSearchMovie.Size = new System.Drawing.Size(213, 251);
             this.lvShowSearchMovie.TabIndex = 33;
             this.lvShowSearchMovie.UseCompatibleStateImageBehavior = false;
+            this.lvShowSearchMovie.ItemActivate += new System.EventHandler(this.lvShowSearchMovie_ItemActivate);
             // 
             // groupBox1
             // 
@@ -452,6 +457,7 @@
             this.btSearchMovie.TabIndex = 22;
             this.btSearchMovie.Text = "ค้นหา";
             this.btSearchMovie.UseVisualStyleBackColor = true;
+            this.btSearchMovie.Click += new System.EventHandler(this.btSearchMovie_Click);
             // 
             // tbSearchMovie
             // 
@@ -478,7 +484,7 @@
             this.Controls.Add(this.groupBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.Name = "FrmMovie";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
